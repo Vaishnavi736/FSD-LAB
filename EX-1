@@ -1,0 +1,73 @@
+//EXERCISE-1A
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>HTML Lists Demonstration</h1>
+        <h2>Unordered List</h2>
+        <ul>
+            <li>B.Tech</li>
+            <li>M.Tech</li>
+            <li>Ph.D</li>
+        </ul>
+        <h2>Ordered List</h2>
+        <ol>
+             <li>CSE</li>
+             <li>IT</li>
+             <li>ECE</li>
+        </ol> 
+        <h2>Nested List</h2>
+        <ul>
+            <li>II Year</li>
+            <ul>
+                <li>Section-A</li>
+                <li>Section-B</li>
+                <li>Section-C</li>
+            </ul>
+            <li>III Year</li>
+            <ul>
+                <li>Section-A</li>
+                <li>Section-B</li>
+            </ul>
+        </ul>
+        <h2>Ordered List inside an Unordered List</h2>
+        <ul>
+            <li>Programming languages</li>
+            <ol>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C++</li>
+            </ol>
+            <li>Databases</li>
+            <ol>
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+            </ol>
+        </ul>
+        <h2>Definition List</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language - the standard markup language for creating web pages.</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets - used for styling HTML elements.</dd>
+            <dt>JavaScript</dt>
+            <dd>A programming language used to create dynamic and interactive web content.</dd>
+        </dl>    
+    </body>
+</html>
+//EXERCISE-1B
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>HTML Hyperlinks Demonstration</h1>
+        <p>Hyperlinks in HTML are created using the <sub> < a > </sub> tag with the <sub> href </sub>attribute to specify the link
+            destination. The <sub> target </sub> attribute determines how the link is opened.</p>
+            <h2>Basic Hyperlink</h2>
+            <p>Visit the <a href="https://www.google.com">Google</a> website. (Opens in the same tab.)</p>
+            <h2>Open Link in a New Tab</h2>
+            <p>Visit the <a href="https://www.wikipedia.com">Wikipedia</a> website. (Opens in the same tab.)</p>
+            <h2>Open Link in Parent Frame</h2>
+            <p> If this page is inside a frame, visit <a href="https://www.example.com">Example</a> in the parent frame.</p>
+            <h2>Open Link in Full Window</h2>
+            <p>Visit <a href="https://www.bbc.com">BBC News</a> to load in the full browser window.</p>
+    </body>
+</html>
