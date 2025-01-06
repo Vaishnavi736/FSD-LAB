@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Player Statistics</title>
+    <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">Cricket Player Statistics</h2>
+
+    <!-- Cricket Player Stats Table with border, colspan, and rowspan -->
+    <table border="1">
+        <tr>
+            <th colspan="4">Player Statistics</th>
+        </tr>
+        <tr>
+            <th>Player</th>
+            <th>Role</th>
+            <th>Matches Played</th>
+            <th>Runs Scored</th>
+        </tr>
+        <tr>
+            <td>Rishabh Pant</td>
+            <td>Wicketkeeper-Batsman</td>
+            <td>50</td>
+            <td>1500</td>
+        </tr>
+        <tr>
+            <td>Jasprit Bumrah</td>
+            <td>Bowler</td>
+            <td>60</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Nitish Kumar Reddy</td>
+            <td>Batsman</td>
+            <td>45</td>
+            <td>1300</td>
+        </tr>
+        <tr>
+            <td>All-rounder</td>
+            <td>25</td>
+            <td>750</td>
+        </tr>
+    </table>
+
+</body>
+</html>
