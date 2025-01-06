@@ -39,21 +39,19 @@
 </head>
 <body>
     <div class="gallery">
-        <a href="images/fullsize1.jpg" target="_blank">
-            <img src="images/thumbnail1.jpg" alt="Thumbnail 1">
+        <a href="https://img.freepik.com/free-photo/beautiful-floral-composition_23-2150968979.jpg?semt=ais_hybrid" target="_blank">
+            <img src="https://img.freepik.com/free-photo/beautiful-floral-composition_23-2150968979.jpg?semt=ais_hybrid" alt="Thumbnail 1">
         </a>
-        <a href="images/fullsize2.jpg" target="_blank">
-            <img src="images/thumbnail2.jpg" alt="Thumbnail 2">
+        <a href="https://w0.peakpx.com/wallpaper/246/777/HD-wallpaper-blue-aesthetic-flowers.jpg" target="_blank">
+            <img src="https://w0.peakpx.com/wallpaper/246/777/HD-wallpaper-blue-aesthetic-flowers.jpg" alt="Thumbnail 2">
         </a>
-        <a href="images/fullsize3.jpg" target="_blank">
-            <img src="images/thumbnail3.jpg" alt="Thumbnail 3">
+        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9c8hLupCSoUYyeR7-EWTCk5lDBaZBJVy2sA&s" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9c8hLupCSoUYyeR7-EWTCk5lDBaZBJVy2sA&s" alt="Thumbnail 3">
         </a>
-        <a href="images/fullsize4.jpg" target="_blank">
-            <img src="images/thumbnail4.jpg" alt="Thumbnail 4">
+        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnj26YwPkYdgFsrSL9dmCx7OMycF13eKKmyg&s" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnj26YwPkYdgFsrSL9dmCx7OMycF13eKKmyg&s" alt="Thumbnail 4">
         </a>
-        <a href="images/fullsize5.jpg" target="_blank">
-            <img src="images/thumbnail5.jpg" alt="Thumbnail 5">
-        </a>
-    </div>
+        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBLZG5RvI355ec2hSfK90b6GPu-6DRAUaU3g&s" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBLZG5RvI355ec2hSfK90b6GPu-6DRAUaU3g&s" alt="Thumbnail 5"
 </body>
 </html>
