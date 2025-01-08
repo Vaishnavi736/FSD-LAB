@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+        }
+        .form-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-container label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-container input, 
+        .form-container select, 
+        .form-container textarea {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-container input[type="radio"],
+        .form-container input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        .form-container textarea {
+            resize: none;
+            height: 80px;
+        }
+        .form-container .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-container button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-container .submit {
+            background-color: #007bff;
+            color: white;
+        }
+        .form-container .reset {
+            background-color: #dc3545;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" placeholder="Enter your full name" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter your age" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" id="male" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other" value="Other">
+            <label for="other">Other</label>
+
+            <label>Hobbies:</label>
+            <input type="checkbox" id="reading" value="Reading">
+            <label for="reading">Reading</label>
+            <input type="checkbox" id="sports" value="Sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="traveling" value="Traveling">
+            <label for="traveling">Traveling</label>
+
+            <label for="country">Country:</label>
+            <select id="country">
+                <option value="" disabled selected>Select your country</option>
+                <option value="USA">USA</option>
+                <option value="India">India</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+            </select>
+
+            <label for="about">About Yourself:</label>
+            <textarea id="about" placeholder="Write about yourself..."></textarea>
+
+            <div class="button-container">
+                <button type="submit" class="submit">Submit</button>
+                <button type="reset" class="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
