@@ -1,0 +1,108 @@
+        a. Write a HTML program, that makes use of <article>, <aside>, <figure>, <figcaption>,<footer>, <header>, <main>, <nav>, <section>, <div>, <span> tags.
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>My Website</title>
+          <style>
+           body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        nav {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #007bff;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem;
+        }
+
+        .left, .right {
+            flex: 1;
+            margin: 0 1rem;
+            border: 1px solid #ddd;
+            padding: 1rem;
+        }
+
+        .left img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 1rem;
+        }
+
+        .left h2 {
+            margin-bottom: 1rem;
+        }
+
+        .left a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .left a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LangYatra</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="left">
+            <h2>About Us</h2>
+            <p>Welcome to our website! We are dedicated to teach you the language you wish to learn.Let's begin our journey.Click on <a href="#">begin</a> to start.</p>
+            <img src="https://ceblog.s3.amazonaws.com/wp-content/uploads/2018/03/08151638/grab-attention-website-home-page-introduction-8.png" alt="Team at Work">
+            <p style="text-align: center;">Our Team at Work</p>
+        </div>
+        <div class="right">
+            <h3>Latest News</h3>
+            <p>Check out our latest updates in the website.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 My Website | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
