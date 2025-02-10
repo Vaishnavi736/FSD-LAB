@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+    <style>
+        /* i. Simple Selectors */
+
+        /* 1. Element selector */
+        p {
+            color: blue;
+        }
+
+        /* 2. ID selector */
+        #main-header {
+            color: green;
+            font-size: 2em;
+        }
+
+        /* 3. Class selector */
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        /* 4. Grouping selector */
+        h1, h2, p {
+            font-family: Arial, sans-serif;
+        }
+
+        /* 5. Universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ii. Combinator Selectors */
+
+        /* 1. Descendant selector */
+        .content p {
+            color: red;
+        }
+
+        /* 2. Child selector */
+        div > p {
+            color: purple;
+        }
+
+        /* 3. Adjacent sibling selector */
+        #special-paragraph + p {
+            color: orange;
+        }
+
+        /* 4. General sibling selector */
+        #special-paragraph ~ p {
+            color: pink;
+        }
+
+        /* iii. Pseudo-class Selectors */
+
+        /* 1. Hover pseudo-class */
+        a:hover {
+            color: blue;
+        }
+
+        /* 2. First-child pseudo-class */
+        ul li:first-child {
+            font-size: 1.2em;
+            color: green;
+        }
+
+        /* 3. Last-child pseudo-class */
+        ul li:last-child {
+            font-size: 1.2em;
+            color: red;
+        }
+
+        /* 4. :nth-child pseudo-class */
+        ul li:nth-child(2) {
+            font-style: italic;
+        }
+
+        /* iv. Pseudo-element Selectors */
+
+        /* 1. ::before pseudo-element */
+        p::before {
+            content: "Note: ";
+            font-weight: bold;
+            color: darkblue;
+        }
+
+        /* 2. ::after pseudo-element */
+        p::after {
+            content: " (End of Paragraph)";
+            font-style: italic;
+            color: gray;
+        }
+
+        /* v. Attribute Selectors */
+
+        /* 1. Attribute selector */
+        a[href="https://example.com"] {
+            color: purple;
+        }
+
+        /* 2. Attribute contains selector */
+        a[href*="example"] {
+            font-weight: bold;
+        }
+
+        /* 3. Attribute prefix selector */
+        a[href^="https"] {
+            text-decoration: underline;
+        }
+
+        /* 4. Attribute suffix selector */
+        a[href$=".com"] {
+            text-transform: uppercase;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 id="main-header" class="header">Welcome to CSS Selectors Example</h1>
+        <p class="description">This page demonstrates different types of CSS selectors.</p>
+    </header>
+
+    <div class="content">
+        <p>This is a normal paragraph.</p>
+        <p class="highlight">This paragraph will be styled using class selector.</p>
+        <p id="special-paragraph">This paragraph will be styled using ID selector.</p>
+        <p class="highlight">Another highlighted paragraph.</p>
+
+        <div class="box">
+            <p>This is inside a div with class "box".</p>
+        </div>
+
+        <ul>
+            <li class="item">Item 1</li>
+            <li class="item">Item 2</li>
+            <li class="item">Item 3</li>
+        </ul>
+
+        <a href="https://example.com" id="link1">Go to Example</a>
+        <a href="https://example.com" class="special-link">Special Link</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 CSS Selectors Example</p>
+    </footer>
+
+</body>
+</html>
