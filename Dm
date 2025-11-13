@@ -1,0 +1,130 @@
+1st one 
+
+# Naive Bayes Classification - Small Example
+
+import pandas as pd
+from sklearn.naive_bayes import GaussianNB
+from sklearn.preprocessing import LabelEncoder
+
+# Step 1: Creating the dataset
+data = {
+    'Weather': ['Sunny', 'Rainy', 'Sunny', 'Overcast', 'Rainy'],
+    'Temperature': ['Hot', 'Mild', 'Cool', 'Hot', 'Cool'],
+    'Play': ['No', 'Yes', 'Yes', 'Yes', 'No']
+}
+
+df = pd.DataFrame(data)
+print("Dataset:\n")
+print(df)
+
+# Step 2: Converting text data to numeric form
+le_weather = LabelEncoder()
+le_temp = LabelEncoder()
+le_play = LabelEncoder()
+
+df['Weather'] = le_weather.fit_transform(df['Weather'])
+df['Temperature'] = le_temp.fit_transform(df['Temperature'])
+df['Play'] = le_play.fit_transform(df['Play'])
+
+# Step 3: Separating features and target
+X = df[['Weather', 'Temperature']]
+y = df['Play']
+
+# Step 4: Training Naive Bayes Classifier
+model = GaussianNB()
+model.fit(X, y)
+
+# Step 5: Testing the model
+test_input = [[le_weather.transform(['Sunny'])[0], le_temp.transform(['Cool'])[0]]]
+prediction = model.predict(test_input)
+
+print("\nTest Input: Sunny, Cool")
+print("Predicted Play Output:", le_play.inverse_transform(prediction)[0])
+O/P:
+Dataset:
+    Weather Temperature Play
+0    Sunny       Hot      No
+1    Rainy       Mild     Yes
+2    Sunny       Cool     Yes
+3    Overcast    Hot      Yes
+4    Rainy       Cool      No
+
+Test Input: Sunny, Cool
+Predicted Play Output: Yes
+
+2nd one 
+
+import java.util.*;
+
+public class Apriori {
+
+    static double minSupport = 0.3;
+    static double minConfidence = 0.6;
+
+    public static void main(String[] args) {
+
+        // Step 1: List of transactions
+        List<Set<String>> transactions = Arrays.asList(
+            new HashSet<>(Arrays.asList("Milk", "Bread", "Eggs")),
+            new HashSet<>(Arrays.asList("Milk", "Bread")),
+            new HashSet<>(Arrays.asList("Milk", "Eggs")),
+            new HashSet<>(Arrays.asList("Bread", "Eggs")),
+            new HashSet<>(Arrays.asList("Milk", "Bread", "Butter"))
+        );
+
+        Set<Set<String>> candidates = getCandidates(transactions);
+
+        System.out.println("Frequent Itemsets:");
+        for (Set<String> itemset : candidates) {
+            System.out.println(itemset);
+        }
+    }
+
+    private static Set<Set<String>> getCandidates(List<Set<String>> transactions) {
+        Map<Set<String>, Integer> itemCount = new HashMap<>();
+        Set<String> allItems = new HashSet<>();
+
+        // Collect all unique items
+        for (Set<String> t : transactions) 
+            allItems.addAll(t);
+
+        // Generate 1-itemsets
+        for (String item : allItems) {
+            int count = 0;
+            for (Set<String> t : transactions)
+                if (t.contains(item)) count++;
+            
+            if ((double) count / transactions.size() >= minSupport) {
+                itemCount.put(Collections.singleton(item), count);
+            }
+        }
+
+        // Generate 2-itemsets
+        List<String> items = new ArrayList<>(allItems);
+        for (int i = 0; i < items.size(); i++) {
+            for (int j = i + 1; j < items.size(); j++) {
+                
+                Set<String> pair = new HashSet<>(Arrays.asList(items.get(i), items.get(j)));
+                int count = 0;
+
+                for (Set<String> t : transactions)
+                    if (t.containsAll(pair)) count++;
+
+                if ((double) count / transactions.size() >= minSupport) {
+                    itemCount.put(pair, count);
+                }
+            }
+        }
+
+        return itemCount.keySet();
+    }
+}
+
+O/P
+Frequent Itemsets:
+[Milk]
+[Bread]
+[Eggs]
+[Milk, Bread]
+[Milk, Eggs]
+[Bread, Eggs]
